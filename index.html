@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#16b8ad" />
+  <title>PageMate — Find your study support</title>
+  <meta name="description" content="PageMate connects students with peer tutors, proofreaders, and handwritten study-material providers nearby." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="PageMate home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><path d="M8 5.5h12.5A3.5 3.5 0 0 1 24 9v17H11.5A3.5 3.5 0 0 1 8 22.5z"/><path d="M8 9H6.5A2.5 2.5 0 0 0 4 11.5v11A3.5 3.5 0 0 0 7.5 26H24"/><path d="M12 12h7M12 16h7M12 20h4"/></svg>
+      </span>
+      <span>Page<span>Mate</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="#explore">Explore services</a>
+      <a href="#become-provider">Become a provider</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-quiet" id="loginBtn">Log in</button>
+      <button class="btn btn-primary" id="headerRequestBtn">Post a request <span aria-hidden="true">↗</span></button>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Your campus, connected</div>
+        <h1>Good work starts<br />with the <span>right people.</span></h1>
+        <p class="hero-lede">Find peer tutors, proofreading help, formatting support, and handwritten study materials from people around your campus.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary btn-large" id="heroRequestBtn">I need support <span aria-hidden="true">→</span></button>
+          <a class="btn btn-outline btn-large" href="#become-provider">Offer a service</a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true"><span>AS</span><span>RK</span><span>MP</span><span>+</span></div>
+          <div><strong>Made for campus life</strong><small>Connect, learn, and collaborate locally</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="floating-card card-note">
+          <div class="mini-file"><span class="file-icon">✎</span><span><b>Study notes</b><small>Neat & organised</small></span><span class="check">✓</span></div>
+          <div class="scribble-lines"><i></i><i></i><i></i><i></i></div>
+          <div class="note-footer"><span>Sample preview</span><span class="pill pill-teal">Available</span></div>
+        </div>
+        <div class="floating-card card-person">
+          <div class="person-avatar">NK</div><div class="person-copy"><b>Neha K.</b><small>Peer tutor · 4.9 ★</small></div><span class="online-dot"></span>
+        </div>
+        <div class="floating-card card-match"><span class="match-icon">⌖</span><span><b>Nearby matches</b><small>People around your campus</small></span></div>
+        <div class="hero-sticker">Study smarter<br />together <span>✦</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="PageMate values">
+      <div><span class="trust-icon">◎</span><span><b>Campus-friendly</b><small>Discover nearby providers</small></span></div>
+      <div><span class="trust-icon">✦</span><span><b>Skill-based profiles</b><small>Review samples and services</small></span></div>
+      <div><span class="trust-icon">♡</span><span><b>Student-first</b><small>Clear prices, clear expectations</small></span></div>
+    </section>
+
+    <section class="section explore-section" id="explore">
+      <div class="section-heading">
+        <div><div class="eyebrow">Find your fit</div><h2>What do you need help with?</h2><p>Explore peer services for your next study session or project.</p></div>
+        <a href="#services" class="text-link">Browse all services <span>→</span></a>
+      </div>
+      <div class="category-grid">
+        <button class="category-card selected" data-category="All services"><span class="category-emoji aqua">✦</span><b>All services</b><small>Explore everything</small><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Tutoring"><span class="category-emoji peach">▤</span><b>Peer tutoring</b><small>Understand concepts</small><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Proofreading"><span class="category-emoji lilac">Aa</span><b>Proofreading</b><small>Polish your writing</small><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Formatting"><span class="category-emoji yellow">▧</span><b>Formatting</b><small>Make it presentation-ready</small><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Handwritten notes"><span class="category-emoji mint">✎</span><b>Handwritten notes</b><small>Study materials on paper</small><span class="category-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading">
+        <div><div class="eyebrow">Community picks</div><h2>Explore student services</h2><p>Compare skills, sample work, and transparent starting prices.</p></div>
+        <div class="service-tools">
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search a service..." aria-label="Search services" /></label>
+          <select id="sortSelect" aria-label="Sort services"><option value="recommended">Recommended</option><option value="price-low">Price: low to high</option><option value="rating">Top rated</option></select>
+        </div>
+      </div>
+      <div class="results-label"><span id="resultsCount">6 services</span><span class="location-note">⌖ Nearby area is a demo filter in this preview</span></div>
+      <div class="service-grid" id="serviceGrid"></div>
+      <div class="empty-state hidden" id="emptyState"><div>⌕</div><h3>No services found</h3><p>Try another search term or category.</p><button class="btn btn-outline" id="resetFiltersBtn">Reset filters</button></div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="section section-inner">
+        <div class="section-heading centered-heading"><div class="eyebrow">Simple by design</div><h2>From request to connection</h2><p>Four simple steps to find the right support.</p></div>
+        <div class="steps-grid">
+          <div class="step"><div class="step-number">01</div><div class="step-icon">⌕</div><h3>Explore</h3><p>Browse services and check profiles, prices, and sample work.</p></div>
+          <div class="step"><div class="step-number">02</div><div class="step-icon">＋</div><h3>Share your request</h3><p>Describe the support you need, your timeline, and your budget.</p></div>
+          <div class="step"><div class="step-number">03</div><div class="step-icon">↔</div><h3>Connect</h3><p>Discuss scope, expectations, and a convenient meeting or delivery plan.</p></div>
+          <div class="step"><div class="step-number">04</div><div class="step-icon">✓</div><h3>Work together</h3><p>Get feedback or study materials and leave an honest review.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="provider-cta" id="become-provider">
+      <div class="provider-blob"></div>
+      <div class="provider-content"><div class="eyebrow eyebrow-light">Share what you're good at</div><h2>Your skills can help<br />someone move forward.</h2><p>Create a profile, show samples of your work, set your rates, and connect with students who need your skills.</p><button class="btn btn-white btn-large" id="providerBtn">Become a provider <span>→</span></button></div>
+      <div class="provider-illustration" aria-hidden="true"><div class="provider-sheet"><span class="sheet-top">MY SKILLS</span><i></i><i></i><i></i><i></i><div class="sheet-check">✓</div></div><div class="provider-pencil">✎</div><div class="provider-star">✦</div></div>
+    </section>
+
+    <section class="safety-note">
+      <span class="safety-symbol">i</span>
+      <div><b>Built for learning and responsible collaboration</b><p>Use PageMate for tutoring, feedback, proofreading, formatting, and study materials. Follow your institution’s rules and submit your own work when required. Never share passwords or sensitive personal information.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark"><svg viewBox="0 0 32 32"><path d="M8 5.5h12.5A3.5 3.5 0 0 1 24 9v17H11.5A3.5 3.5 0 0 1 8 22.5z"/><path d="M8 9H6.5A2.5 2.5 0 0 0 4 11.5v11A3.5 3.5 0 0 0 7.5 26H24"/><path d="M12 12h7M12 16h7M12 20h4"/></svg></span><span>Page<span>Mate</span></span></a><p>Better learning happens together.</p><div class="footer-links"><a href="#how-it-works">How it works</a><a href="#services">Explore</a><a href="#become-provider">Offer a service</a></div><small>© <span id="year"></span> PageMate. Prototype preview.</small></footer>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop" role="presentation">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close dialog">×</button>
+      <div class="modal-kicker" id="modalKicker">LET'S GET STARTED</div>
+      <h2 id="modalTitle">Post a support request</h2>
+      <p class="modal-intro" id="modalIntro">Tell the PageMate community what kind of support you need.</p>
+      <form id="requestForm">
+        <label>Your name<input name="name" required placeholder="e.g. Aanya" maxlength="60" /></label>
+        <label>Email address<input name="email" type="email" required placeholder="you@example.com" /></label>
+        <label>What do you need?<select name="service" required><option value="">Choose a service</option><option>Peer tutoring</option><option>Proofreading</option><option>Formatting</option><option>Handwritten study notes</option><option>Other learning support</option></select></label>
+        <label>Details<textarea name="details" rows="3" required placeholder="Describe the topic, timeline, and type of support you need." maxlength="1000"></textarea></label>
+        <div class="form-row"><label>Budget (₹)<input name="budget" type="number" min="0" placeholder="e.g. 300" /></label><label>Campus / area<input name="area" placeholder="e.g. North Campus" maxlength="100" /></label></div>
+        <button class="btn btn-primary btn-large full-width" type="submit" id="formSubmitBtn">Create demo request →</button>
+        <p class="form-disclaimer">Prototype only: this form saves your request in this browser, not to a live server.</p>
+      </form>
+      <div class="success-panel hidden" id="successPanel"><div class="success-check">✓</div><h3>Request saved in this demo</h3><p>Your example request has been stored in this browser session. Connect a backend to receive real requests from other users.</p><button class="btn btn-primary full-width" id="successCloseBtn">Back to PageMate</button></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
